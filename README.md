@@ -3,35 +3,22 @@
 #### 介绍
 VS编译FFMPEG
 
-#### 软件架构
-软件架构说明
+原始项目地址：https://github.com/ShiftMediaProject/FFmpeg 
+
+该项目编译方法：https://blog.csdn.net/luckywll/article/details/85792097
+
+我这里只是将依赖的项目、需要单独下载的头文件、工具全部放进来，直接就可以打开vs编译了。
 
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. nasm和yasm在tool下面，将对应版本的yasm.exe和nasm.exe拷贝到vs下面。<br>
+vs2013: C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin<br>
+vs2015: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin<br>
+vs2017: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC<br>
+2. nasm和yasm分别有3个配置文件.xml,.props,.targets,拷贝到vs下面。<br>
+ vs2013: C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\BuildCustomizations <br>
+ vs2015: C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations <br>
+ vs2017: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations<br>
+3. 打开\code\Ffmpeg\SMP\ ffmpeg_deps.sln就可以编译了
 
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
