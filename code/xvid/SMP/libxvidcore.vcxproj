@@ -1,0 +1,1454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLLWinRT|Win32">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLLWinRT|x64">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|Win32">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|x64">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|Win32">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|x64">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|Win32">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|x64">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0889360-2F17-4D9C-A185-A5C51EA8073B}</ProjectGuid>
+    <RootNamespace>libxvidcore</RootNamespace>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' != ''">$(WindowsTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcored</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcored_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcored</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcored_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcored</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcored_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcored</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcored_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcore</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcore_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcore</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libxvidcore_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcore</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcore_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcore</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>xvidcore_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;_WINDOWS;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_WINDOWS;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;_WINDOWS;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_WINDOWS;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;_WINDOWS;NDEBUG;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_WINDOWS;NDEBUG;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;_WINDOWS;NDEBUG;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ARCH_IS_IA32;ARCH_IS_32BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_WINDOWS;NDEBUG;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ARCH_IS_X86_64;ARCH_IS_64BIT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <ModuleDefinitionFile>..\build\generic\libxvidcore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\src\xvid.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\xvid.txt</Command>
+    </PostBuildEvent>
+    <YASM>
+      <IncludePaths>$(ProjectDir)\..\src;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>WINDOWS;ARCH_IS_X86_64;NO_PREFIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </YASM>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del "$(OutDir)"\include\xvid.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\xvid.h (
+del /f /q "$(OutDir)"\include\xvid.h
+)
+if exist $(OutDir)\licenses\xvid.txt (
+del /f /q $(OutDir)\licenses\xvid.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\bitstream\bitstream.h" />
+    <ClInclude Include="..\src\bitstream\cbp.h" />
+    <ClInclude Include="..\src\bitstream\mbcoding.h" />
+    <ClInclude Include="..\src\bitstream\vlc_codes.h" />
+    <ClInclude Include="..\src\bitstream\zigzag.h" />
+    <ClInclude Include="..\src\dct\fdct.h" />
+    <ClInclude Include="..\src\dct\idct.h" />
+    <ClInclude Include="..\src\decoder.h" />
+    <ClInclude Include="..\src\encoder.h" />
+    <ClInclude Include="..\src\global.h" />
+    <ClInclude Include="..\src\image\colorspace.h" />
+    <ClInclude Include="..\src\image\font.h" />
+    <ClInclude Include="..\src\image\image.h" />
+    <ClInclude Include="..\src\image\interpolate8x8.h" />
+    <ClInclude Include="..\src\image\postprocessing.h" />
+    <ClInclude Include="..\src\image\qpel.h" />
+    <ClInclude Include="..\src\image\reduced.h" />
+    <ClInclude Include="..\src\motion\estimation.h" />
+    <ClInclude Include="..\src\motion\gmc.h" />
+    <ClInclude Include="..\src\motion\motion.h" />
+    <ClInclude Include="..\src\motion\motion_inlines.h" />
+    <ClInclude Include="..\src\motion\motion_smp.h" />
+    <ClInclude Include="..\src\motion\sad.h" />
+    <ClInclude Include="..\src\plugins\plugin_ssim.h" />
+    <ClInclude Include="..\src\portab.h" />
+    <ClInclude Include="..\src\prediction\mbprediction.h" />
+    <ClInclude Include="..\src\quant\quant.h" />
+    <ClInclude Include="..\src\quant\quant_matrix.h" />
+    <ClInclude Include="..\src\utils\emms.h" />
+    <ClInclude Include="..\src\utils\mbfunctions.h" />
+    <ClInclude Include="..\src\utils\mem_align.h" />
+    <ClInclude Include="..\src\utils\mem_transfer.h" />
+    <ClInclude Include="..\src\utils\timer.h" />
+    <ClInclude Include="..\src\xvid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\bitstream\bitstream.c" />
+    <ClCompile Include="..\src\bitstream\cbp.c" />
+    <ClCompile Include="..\src\bitstream\mbcoding.c" />
+    <ClCompile Include="..\src\dct\fdct.c" />
+    <ClCompile Include="..\src\dct\idct.c" />
+    <ClCompile Include="..\src\dct\simple_idct.c" />
+    <ClCompile Include="..\src\decoder.c" />
+    <ClCompile Include="..\src\encoder.c" />
+    <ClCompile Include="..\src\image\colorspace.c" />
+    <ClCompile Include="..\src\image\font.c" />
+    <ClCompile Include="..\src\image\image.c" />
+    <ClCompile Include="..\src\image\interpolate8x8.c" />
+    <ClCompile Include="..\src\image\postprocessing.c" />
+    <ClCompile Include="..\src\image\qpel.c" />
+    <ClCompile Include="..\src\image\reduced.c" />
+    <ClCompile Include="..\src\motion\estimation_bvop.c" />
+    <ClCompile Include="..\src\motion\estimation_common.c" />
+    <ClCompile Include="..\src\motion\estimation_gmc.c" />
+    <ClCompile Include="..\src\motion\estimation_pvop.c" />
+    <ClCompile Include="..\src\motion\estimation_rd_based.c" />
+    <ClCompile Include="..\src\motion\estimation_rd_based_bvop.c" />
+    <ClCompile Include="..\src\motion\gmc.c" />
+    <ClCompile Include="..\src\motion\motion_comp.c" />
+    <ClCompile Include="..\src\motion\sad.c" />
+    <ClCompile Include="..\src\motion\vop_type_decision.c" />
+    <ClCompile Include="..\src\plugins\plugin_2pass1.c" />
+    <ClCompile Include="..\src\plugins\plugin_2pass2.c" />
+    <ClCompile Include="..\src\plugins\plugin_dump.c" />
+    <ClCompile Include="..\src\plugins\plugin_lumimasking.c" />
+    <ClCompile Include="..\src\plugins\plugin_psnr.c" />
+    <ClCompile Include="..\src\plugins\plugin_psnrhvsm.c" />
+    <ClCompile Include="..\src\plugins\plugin_single.c" />
+    <ClCompile Include="..\src\plugins\plugin_ssim.c" />
+    <ClCompile Include="..\src\prediction\mbprediction.c" />
+    <ClCompile Include="..\src\quant\quant_h263.c" />
+    <ClCompile Include="..\src\quant\quant_matrix.c" />
+    <ClCompile Include="..\src\quant\quant_mpeg.c" />
+    <ClCompile Include="..\src\utils\emms.c" />
+    <ClCompile Include="..\src\utils\mbtransquant.c" />
+    <ClCompile Include="..\src\utils\mem_align.c" />
+    <ClCompile Include="..\src\utils\mem_transfer.c" />
+    <ClCompile Include="..\src\utils\timer.c" />
+    <ClCompile Include="..\src\xvid.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\build\generic\libxvidcore.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="..\src\bitstream\x86_asm\cbp_mmx.asm" />
+    <YASM Include="..\src\bitstream\x86_asm\cbp_sse2.asm" />
+    <YASM Include="..\src\dct\x86_asm\fdct_mmx_ffmpeg.asm" />
+    <YASM Include="..\src\dct\x86_asm\fdct_mmx_skal.asm" />
+    <YASM Include="..\src\dct\x86_asm\fdct_sse2_skal.asm" />
+    <YASM Include="..\src\dct\x86_asm\idct_3dne.asm" />
+    <YASM Include="..\src\dct\x86_asm\idct_mmx.asm" />
+    <YASM Include="..\src\dct\x86_asm\idct_sse2_dmitry.asm" />
+    <YASM Include="..\src\image\x86_asm\colorspace_mmx.inc" />
+    <YASM Include="..\src\image\x86_asm\colorspace_rgb_mmx.asm">
+      <IncludePaths>$(ProjectDir)\..\src\image\x86_asm;%(IncludePaths)</IncludePaths>
+    </YASM>
+    <YASM Include="..\src\image\x86_asm\colorspace_yuv_mmx.asm" />
+    <YASM Include="..\src\image\x86_asm\colorspace_yuyv_mmx.asm">
+      <IncludePaths>$(ProjectDir)\..\src\image\x86_asm;%(IncludePaths)</IncludePaths>
+    </YASM>
+    <YASM Include="..\src\image\x86_asm\deintl_sse.asm" />
+    <YASM Include="..\src\image\x86_asm\gmc_mmx.asm" />
+    <YASM Include="..\src\image\x86_asm\interpolate8x8_3dn.asm" />
+    <YASM Include="..\src\image\x86_asm\interpolate8x8_3dne.asm" />
+    <YASM Include="..\src\image\x86_asm\interpolate8x8_mmx.asm" />
+    <YASM Include="..\src\image\x86_asm\interpolate8x8_xmm.asm" />
+    <YASM Include="..\src\image\x86_asm\postprocessing_mmx.asm" />
+    <YASM Include="..\src\image\x86_asm\postprocessing_sse2.asm" />
+    <YASM Include="..\src\image\x86_asm\qpel_mmx.asm" />
+    <YASM Include="..\src\image\x86_asm\reduced_mmx.asm" />
+    <YASM Include="..\src\motion\x86_asm\sad_3dn.asm" />
+    <YASM Include="..\src\motion\x86_asm\sad_3dne.asm" />
+    <YASM Include="..\src\motion\x86_asm\sad_mmx.asm" />
+    <YASM Include="..\src\motion\x86_asm\sad_sse2.asm" />
+    <YASM Include="..\src\motion\x86_asm\sad_xmm.asm" />
+    <YASM Include="..\src\plugins\x86_asm\plugin_ssim-a.asm" />
+    <YASM Include="..\src\quant\x86_asm\quantize_h263_3dne.asm" />
+    <YASM Include="..\src\quant\x86_asm\quantize_h263_mmx.asm" />
+    <YASM Include="..\src\quant\x86_asm\quantize_mpeg_mmx.asm" />
+    <YASM Include="..\src\quant\x86_asm\quantize_mpeg_xmm.asm" />
+    <YASM Include="..\src\utils\x86_asm\cpuid.asm" />
+    <YASM Include="..\src\utils\x86_asm\interlacing_mmx.asm" />
+    <YASM Include="..\src\utils\x86_asm\mem_transfer_3dne.asm" />
+    <YASM Include="..\src\utils\x86_asm\mem_transfer_mmx.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.targets" />
+  </ImportGroup>
+</Project>

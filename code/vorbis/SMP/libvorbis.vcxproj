@@ -1,0 +1,1880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLLWinRT|Win32">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLLWinRT|x64">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|Win32">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|x64">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLStaticDeps|Win32">
+      <Configuration>ReleaseDLLStaticDeps</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLStaticDeps|x64">
+      <Configuration>ReleaseDLLStaticDeps</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRTStaticDeps|Win32">
+      <Configuration>ReleaseDLLWinRTStaticDeps</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRTStaticDeps|x64">
+      <Configuration>ReleaseDLLWinRTStaticDeps</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|Win32">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|x64">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|Win32">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|x64">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E4CCBFE2-5DC2-44B2-92A8-447EFE6DDB6E}</ProjectGuid>
+    <RootNamespace>libvorbis</RootNamespace>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' != ''">$(WindowsTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbisd</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbisd_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbisd</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbisd_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbisd</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbisd_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbisd</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbisd_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbis</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbis_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbis</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libvorbis_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>vorbis_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liboggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liboggd_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liboggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liboggd_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalDependencies>oggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>oggd_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalDependencies>oggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>oggd_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libogg_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libogg_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalDependencies>ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>ogg_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libogg_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalDependencies>ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>ogg_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;LIBVORBISFILE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DisableSpecificWarnings>4267;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libvorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libogg_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\vorbis
+copy ..\include\vorbis\*.h "$(OutDir)"\include\vorbis
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\vorbis.txt
+if exist "$(ProjectDir)"\..\..\prebuilt\include\ogg\ogg.h (
+mkdir "$(OutDir)"\include\ogg
+copy /y "$(ProjectDir)"\..\..\prebuilt\include\ogg\*.h "$(OutDir)"\include\ogg\
+)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\vorbis (
+rd /s /q "$(OutDir)"\include\vorbis
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\vorbis (
+rmdir /s /q "$(OutDir)"\include\vorbis
+)
+if exist $(OutDir)\licenses\vorbis.txt (
+del /f /q $(OutDir)\licenses\vorbis.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\analysis.c" />
+    <ClCompile Include="..\lib\bitrate.c" />
+    <ClCompile Include="..\lib\block.c" />
+    <ClCompile Include="..\lib\codebook.c" />
+    <ClCompile Include="..\lib\envelope.c" />
+    <ClCompile Include="..\lib\floor0.c" />
+    <ClCompile Include="..\lib\floor1.c" />
+    <ClCompile Include="..\lib\info.c" />
+    <ClCompile Include="..\lib\lookup.c" />
+    <ClCompile Include="..\lib\lpc.c" />
+    <ClCompile Include="..\lib\lsp.c" />
+    <ClCompile Include="..\lib\mapping0.c" />
+    <ClCompile Include="..\lib\mdct.c" />
+    <ClCompile Include="..\lib\psy.c" />
+    <ClCompile Include="..\lib\registry.c" />
+    <ClCompile Include="..\lib\res0.c" />
+    <ClCompile Include="..\lib\sharedbook.c" />
+    <ClCompile Include="..\lib\smallft.c" />
+    <ClCompile Include="..\lib\synthesis.c" />
+    <ClCompile Include="..\lib\vorbisenc.c" />
+    <ClCompile Include="..\lib\vorbisfile.c" />
+    <ClCompile Include="..\lib\window.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\vorbis\codec.h" />
+    <ClInclude Include="..\include\vorbis\vorbisenc.h" />
+    <ClInclude Include="..\include\vorbis\vorbisfile.h" />
+    <ClInclude Include="..\lib\backends.h" />
+    <ClInclude Include="..\lib\bitrate.h" />
+    <ClInclude Include="..\lib\books\coupled\res_books_stereo.h" />
+    <ClInclude Include="..\lib\books\floor\floor_books.h" />
+    <ClInclude Include="..\lib\books\uncoupled\res_books_uncoupled.h" />
+    <ClInclude Include="..\lib\codebook.h" />
+    <ClInclude Include="..\lib\codec_internal.h" />
+    <ClInclude Include="..\lib\envelope.h" />
+    <ClInclude Include="..\lib\highlevel.h" />
+    <ClInclude Include="..\lib\lookup.h" />
+    <ClInclude Include="..\lib\lookup_data.h" />
+    <ClInclude Include="..\lib\lpc.h" />
+    <ClInclude Include="..\lib\lsp.h" />
+    <ClInclude Include="..\lib\masking.h" />
+    <ClInclude Include="..\lib\mdct.h" />
+    <ClInclude Include="..\lib\misc.h" />
+    <ClInclude Include="..\lib\modes\floor_all.h" />
+    <ClInclude Include="..\lib\modes\psych_11.h" />
+    <ClInclude Include="..\lib\modes\psych_16.h" />
+    <ClInclude Include="..\lib\modes\psych_44.h" />
+    <ClInclude Include="..\lib\modes\psych_8.h" />
+    <ClInclude Include="..\lib\modes\residue_16.h" />
+    <ClInclude Include="..\lib\modes\residue_44.h" />
+    <ClInclude Include="..\lib\modes\residue_44u.h" />
+    <ClInclude Include="..\lib\modes\residue_8.h" />
+    <ClInclude Include="..\lib\modes\setup_11.h" />
+    <ClInclude Include="..\lib\modes\setup_16.h" />
+    <ClInclude Include="..\lib\modes\setup_22.h" />
+    <ClInclude Include="..\lib\modes\setup_32.h" />
+    <ClInclude Include="..\lib\modes\setup_44.h" />
+    <ClInclude Include="..\lib\modes\setup_44p51.h" />
+    <ClInclude Include="..\lib\modes\setup_44u.h" />
+    <ClInclude Include="..\lib\modes\setup_8.h" />
+    <ClInclude Include="..\lib\modes\setup_X.h" />
+    <ClInclude Include="..\lib\os.h" />
+    <ClInclude Include="..\lib\psy.h" />
+    <ClInclude Include="..\lib\registry.h" />
+    <ClInclude Include="..\lib\scales.h" />
+    <ClInclude Include="..\lib\smallft.h" />
+    <ClInclude Include="..\lib\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libvorbis.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

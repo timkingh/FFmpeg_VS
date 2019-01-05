@@ -1,0 +1,1409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLLWinRT|Win32">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLLWinRT|x64">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|Win32">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|x64">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|Win32">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|x64">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|Win32">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|x64">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2016A4DB-B9BA-4521-BDA7-0EB3806E1FC8}</ProjectGuid>
+    <RootNamespace>libmp3lame</RootNamespace>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' != ''">$(WindowsTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lamed</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lamed_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lamed</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lamed_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lamed</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lamed_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lamed</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lamed_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lame</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lame_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lame</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libmp3lame_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lame</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lame_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lame</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>mp3lame_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;_DEBUG;DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WINDOWS;HAVE_MPGLIB;WIN32;HAVE_CONFIG_H;HAVE_XMMINTRIN_H;MIN_ARCH_SSE;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\include;..\libmp3lame;..\mpglib</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libmp3lame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lame
+copy ..\include\lame.h "$(OutDir)"\include\lame
+mkdir $(OutDir)\licenses
+copy ..\LICENSE $(OutDir)\licenses\mp3lame.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist "$(OutDir)"\include\lame (
+rd /s /q "$(OutDir)"\include\lame
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lame (
+rmdir /s /q "$(OutDir)"\include\lame
+)
+if exist $(OutDir)\licenses\mp3lame.txt (
+del /f /q $(OutDir)\licenses\mp3lame.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libmp3lame\bitstream.c" />
+    <ClCompile Include="..\libmp3lame\encoder.c" />
+    <ClCompile Include="..\libmp3lame\fft.c" />
+    <ClCompile Include="..\libmp3lame\gain_analysis.c" />
+    <ClCompile Include="..\libmp3lame\id3tag.c" />
+    <ClCompile Include="..\libmp3lame\lame.c" />
+    <ClCompile Include="..\libmp3lame\mpglib_interface.c" />
+    <ClCompile Include="..\libmp3lame\newmdct.c" />
+    <ClCompile Include="..\libmp3lame\presets.c" />
+    <ClCompile Include="..\libmp3lame\psymodel.c" />
+    <ClCompile Include="..\libmp3lame\quantize.c" />
+    <ClCompile Include="..\libmp3lame\quantize_pvt.c" />
+    <ClCompile Include="..\libmp3lame\reservoir.c" />
+    <ClCompile Include="..\libmp3lame\set_get.c" />
+    <ClCompile Include="..\libmp3lame\tables.c" />
+    <ClCompile Include="..\libmp3lame\takehiro.c" />
+    <ClCompile Include="..\libmp3lame\util.c" />
+    <ClCompile Include="..\libmp3lame\vbrquantize.c" />
+    <ClCompile Include="..\libmp3lame\VbrTag.c" />
+    <ClCompile Include="..\libmp3lame\vector\xmm_quantize_sub.c" />
+    <ClCompile Include="..\libmp3lame\version.c" />
+    <ClCompile Include="..\mpglib\common.c" />
+    <ClCompile Include="..\mpglib\dct64_i386.c" />
+    <ClCompile Include="..\mpglib\decode_i386.c" />
+    <ClCompile Include="..\mpglib\interface.c" />
+    <ClCompile Include="..\mpglib\layer1.c" />
+    <ClCompile Include="..\mpglib\layer2.c" />
+    <ClCompile Include="..\mpglib\layer3.c" />
+    <ClCompile Include="..\mpglib\tabinit.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\lame.h" />
+    <ClInclude Include="..\libmp3lame\bitstream.h" />
+    <ClInclude Include="..\libmp3lame\encoder.h" />
+    <ClInclude Include="..\libmp3lame\fft.h" />
+    <ClInclude Include="..\libmp3lame\gain_analysis.h" />
+    <ClInclude Include="..\libmp3lame\id3tag.h" />
+    <ClInclude Include="..\libmp3lame\l3side.h" />
+    <ClInclude Include="..\libmp3lame\lame-analysis.h" />
+    <ClInclude Include="..\libmp3lame\lame_global_flags.h" />
+    <ClInclude Include="..\libmp3lame\machine.h" />
+    <ClInclude Include="..\libmp3lame\newmdct.h" />
+    <ClInclude Include="..\libmp3lame\psymodel.h" />
+    <ClInclude Include="..\libmp3lame\quantize.h" />
+    <ClInclude Include="..\libmp3lame\quantize_pvt.h" />
+    <ClInclude Include="..\libmp3lame\reservoir.h" />
+    <ClInclude Include="..\libmp3lame\set_get.h" />
+    <ClInclude Include="..\libmp3lame\tables.h" />
+    <ClInclude Include="..\libmp3lame\util.h" />
+    <ClInclude Include="..\libmp3lame\vbrquantize.h" />
+    <ClInclude Include="..\libmp3lame\VbrTag.h" />
+    <ClInclude Include="..\libmp3lame\vector\lame_intrin.h" />
+    <ClInclude Include="..\libmp3lame\version.h" />
+    <ClInclude Include="..\mpglib\common.h" />
+    <ClInclude Include="..\mpglib\dct64_i386.h" />
+    <ClInclude Include="..\mpglib\decode_i386.h" />
+    <ClInclude Include="..\mpglib\interface.h" />
+    <ClInclude Include="..\mpglib\layer1.h" />
+    <ClInclude Include="..\mpglib\layer2.h" />
+    <ClInclude Include="..\mpglib\layer3.h" />
+    <ClInclude Include="..\mpglib\mpg123.h" />
+    <ClInclude Include="..\mpglib\mpglib.h" />
+    <ClInclude Include="..\mpglib\tabinit.h" />
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\libmp3lame\lame.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='DebugWinRT'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='ReleaseWinRT'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libmp3lame.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

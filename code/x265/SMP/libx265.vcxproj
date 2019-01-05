@@ -1,0 +1,1697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_10b|Win32">
+      <Configuration>Debug_10b</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_10b|x64">
+      <Configuration>Debug_10b</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_12b|Win32">
+      <Configuration>Debug_12b</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_12b|x64">
+      <Configuration>Debug_12b</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_10b|Win32">
+      <Configuration>Release_10b</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_10b|x64">
+      <Configuration>Release_10b</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTO|Win32">
+      <Configuration>ReleaseLTO</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTO|x64">
+      <Configuration>ReleaseLTO</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_12b|Win32">
+      <Configuration>Release_12b</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_12b|x64">
+      <Configuration>Release_12b</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2CF9B09C-DC32-46BD-BF78-5B00B7E4ED00}</ProjectGuid>
+    <RootNamespace>libx265</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265d</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265d</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>x265d</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>x265d</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>x265</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_10b</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_10bd</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_12b</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_12bd</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>x265</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_10b</TargetName>
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_10bd</TargetName>
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_12b</TargetName>
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libx265_12bd</TargetName>
+    <OutDir>$(SolutionDir)obj\$(Platform)\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;_WIN32_WINNT=0x0502;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=0;X265_DEPTH=8;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <C99Support>true</C99Support>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libx265_10bd.lib;libx265_12bd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;ENABLE_ASSEMBLY=1;_WIN32_WINNT=0x0600;HIGH_BIT_DEPTH=0;X265_DEPTH=8;X86_64=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <C99Support>true</C99Support>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libx265_10bd.lib;libx265_12bd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;_WIN32_WINNT=0x0502;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=0;X265_DEPTH=8;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <C99Support>true</C99Support>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libx265.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libx265_10bd.lib;libx265_12bd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;ENABLE_ASSEMBLY=1;_WIN32_WINNT=0x0600;HIGH_BIT_DEPTH=0;X265_DEPTH=8;X86_64=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <C99Support>true</C99Support>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libx265.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libx265_10bd.lib;libx265_12bd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+      <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Debug_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;_WIN32_WINNT=0x0502;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=0;X265_DEPTH=8;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libx265_10b.lib;libx265_12b.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Release_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;_WIN32_WINNT=0x0502;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=0;X265_DEPTH=8;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libx265_10b.lib;libx265_12b.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Release_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;ENABLE_ASSEMBLY=1;_WIN32_WINNT=0x0600;HIGH_BIT_DEPTH=0;X265_DEPTH=8;X86_64=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libx265_10b.lib;libx265_12b.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Release_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;ENABLE_ASSEMBLY=1;_WIN32_WINNT=0x0600;HIGH_BIT_DEPTH=0;X265_DEPTH=8;X86_64=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libx265_10b.lib;libx265_12b.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Release_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;_WIN32_WINNT=0x0502;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=0;X265_DEPTH=8;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <WarningLevel>Level3</WarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libx265.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalDependencies>libx265_10b.lib;libx265_12b.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+    </Link>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Release_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;LINKED_10BIT=1;LINKED_12BIT;X265_NS=x265;EXPORT_C_API=1;ENABLE_ASSEMBLY=1;_WIN32_WINNT=0x0600;HIGH_BIT_DEPTH=0;X265_DEPTH=8;X86_64=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libx265.def</ModuleDefinitionFile>
+      <AdditionalDependencies>libx265_10b.lib;libx265_12b.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(SolutionDir)obj\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
+    </Link>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=0;X265_DEPTH=8;BIT_DEPTH=8;X265_NS=x265;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)
+MSBuild  $(ProjectFileName) /property:Configuration="Release_10b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo
+MSBuild  $(ProjectFileName) /property:Configuration="Release_12b",Platform="$(Platform)",SolutionDir="$(SolutionDir)\",SolutionFileName="$(SolutionFileName)" /verbosity:m /nologo </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy ..\source\x265.h "$(OutDir)"\include
+copy .\x265_config.h "$(OutDir)"\include
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\x265.txt</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\x265.h (
+del /f /q "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del /f /q "$(OutDir)"\include\x265_config.h
+)
+if exist $(OutDir)\licenses\x265.txt (
+del /f /q $(OutDir)\licenses\x265.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;ENABLE_ASSEMBLY=0;HIGH_BIT_DEPTH=1;X265_DEPTH=10;X265_NS=x265_10bit;_WIN32_WINNT=0x0502;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <WarningLevel>Level3</WarningLevel>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=1;X265_DEPTH=10;BIT_DEPTH=10;X265_NS=x265_10bit;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;ENABLE_ASSEMBLY=0;HIGH_BIT_DEPTH=1;X265_DEPTH=10;X265_NS=x265_10bit;_WIN32_WINNT=0x0502;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <WarningLevel>Level3</WarningLevel>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=1;X265_DEPTH=10;BIT_DEPTH=10;X265_NS=x265_10bit;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;MAIN12=1;ENABLE_ASSEMBLY=0;HIGH_BIT_DEPTH=1;X265_DEPTH=12;X265_NS=x265_12bit;_WIN32_WINNT=0x0502;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <WarningLevel>Level3</WarningLevel>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=1;X265_DEPTH=12;BIT_DEPTH=12;X265_NS=x265_12bit;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;MAIN12=1;ENABLE_ASSEMBLY=0;HIGH_BIT_DEPTH=1;X265_DEPTH=12;X265_NS=x265_12bit;_WIN32_WINNT=0x0502;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <WarningLevel>Level3</WarningLevel>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>PREFIX;STACK_ALIGNMENT=4;HIGH_BIT_DEPTH=1;X265_DEPTH=12;BIT_DEPTH=12;X265_NS=x265_12bit;WIN32=1;ARCH_X86_64=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_10b|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;X265_NS=x265_10bit;_WIN32_WINNT=0x0600;X86_64=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=1;X265_DEPTH=10;BIT_DEPTH=10;X265_NS=x265_10bit;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_10b|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;X265_NS=x265_10bit;_WIN32_WINNT=0x0600;X86_64=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=1;X265_DEPTH=10;BIT_DEPTH=10;X265_NS=x265_10bit;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_12b|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;MAIN12=1;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=1;X265_DEPTH=12;X265_NS=x265_12bit;_WIN32_WINNT=0x0600;X86_64=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=1;X265_DEPTH=12;BIT_DEPTH=12;X265_NS=x265_12bit;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_12b|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>X265_VERSION=2.8;WIN32;_WINDOWS;X265_ARCH_X86=1;HAVE_INT_TYPES_H=1;ENABLE_HDR10_PLUS=1;EXPORT_C_API=0;MAIN12=1;ENABLE_ASSEMBLY=1;HIGH_BIT_DEPTH=1;X265_DEPTH=12;X265_NS=x265_12bit;_WIN32_WINNT=0x0600;X86_64=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\source;..\source\Lib;..\source\common;..\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseProcessorExtensions>SSE3</UseProcessorExtensions>
+      <C99Support>true</C99Support>
+      <ExceptionHandling>false</ExceptionHandling>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <DisableSpecificWarnings>4391;4996;4838;4577;4390;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <NASM>
+      <IncludePaths>$(ProjectDir)\..\source\common\x86;%(IncludePaths)</IncludePaths>
+      <PreprocessorDefinitions>STACK_ALIGNMENT=16;HIGH_BIT_DEPTH=1;X265_DEPTH=12;BIT_DEPTH=12;X265_NS=x265_12bit;WIN32=1;ARCH_X86_64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </NASM>
+    <PreBuildEvent>
+      <Command>if exist ..\source\x265_config.h (
+del ..\source\x265_config.h
+)
+if exist "$(OutDir)"\include\x265.h (
+del "$(OutDir)"\include\x265.h
+)
+if exist "$(OutDir)"\include\x265_config.h (
+del "$(OutDir)"\include\x265_config.h
+)</Command>
+    </PreBuildEvent>
+    <Lib>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\common\bitstream.h" />
+    <ClInclude Include="..\source\common\common.h" />
+    <ClInclude Include="..\source\common\constants.h" />
+    <ClInclude Include="..\source\common\contexts.h" />
+    <ClInclude Include="..\source\common\cpu.h" />
+    <ClInclude Include="..\source\common\cudata.h" />
+    <ClInclude Include="..\source\common\deblock.h" />
+    <ClInclude Include="..\source\common\frame.h" />
+    <ClInclude Include="..\source\common\framedata.h" />
+    <ClInclude Include="..\source\common\lowres.h" />
+    <ClInclude Include="..\source\common\md5.h" />
+    <ClInclude Include="..\source\common\mv.h" />
+    <ClInclude Include="..\source\common\param.h" />
+    <ClInclude Include="..\source\common\piclist.h" />
+    <ClInclude Include="..\source\common\picyuv.h" />
+    <ClInclude Include="..\source\common\predict.h" />
+    <ClInclude Include="..\source\common\primitives.h" />
+    <ClInclude Include="..\source\common\quant.h" />
+    <ClInclude Include="..\source\common\scalinglist.h" />
+    <ClInclude Include="..\source\common\shortyuv.h" />
+    <ClInclude Include="..\source\common\slice.h" />
+    <ClInclude Include="..\source\common\threading.h" />
+    <ClInclude Include="..\source\common\threadpool.h" />
+    <ClInclude Include="..\source\common\wavefront.h" />
+    <ClInclude Include="..\source\common\winxp.h" />
+    <ClInclude Include="..\source\common\x86\blockcopy8.h" />
+    <ClInclude Include="..\source\common\x86\dct8.h" />
+    <ClInclude Include="..\source\common\x86\intrapred.h" />
+    <ClInclude Include="..\source\common\x86\ipfilter8.h" />
+    <ClInclude Include="..\source\common\x86\loopfilter.h" />
+    <ClInclude Include="..\source\common\x86\mc.h" />
+    <ClInclude Include="..\source\common\x86\pixel-util.h" />
+    <ClInclude Include="..\source\common\x86\pixel.h" />
+    <ClInclude Include="..\source\common\x86\seaintegral.h" />
+    <ClInclude Include="..\source\common\yuv.h" />
+    <ClInclude Include="..\source\dynamicHDR10\BasicStructures.h" />
+    <ClInclude Include="..\source\dynamicHDR10\hdr10plus.h" />
+    <ClInclude Include="..\source\dynamicHDR10\json11\json11.h" />
+    <ClInclude Include="..\source\dynamicHDR10\JsonHelper.h" />
+    <ClInclude Include="..\source\dynamicHDR10\metadataFromJson.h" />
+    <ClInclude Include="..\source\dynamicHDR10\SeiMetadataDictionary.h" />
+    <ClInclude Include="..\source\encoder\analysis.h" />
+    <ClInclude Include="..\source\encoder\bitcost.h" />
+    <ClInclude Include="..\source\encoder\dpb.h" />
+    <ClInclude Include="..\source\encoder\encoder.h" />
+    <ClInclude Include="..\source\encoder\entropy.h" />
+    <ClInclude Include="..\source\encoder\frameencoder.h" />
+    <ClInclude Include="..\source\encoder\framefilter.h" />
+    <ClInclude Include="..\source\encoder\level.h" />
+    <ClInclude Include="..\source\encoder\motion.h" />
+    <ClInclude Include="..\source\encoder\nal.h" />
+    <ClInclude Include="..\source\encoder\ratecontrol.h" />
+    <ClInclude Include="..\source\encoder\rdcost.h" />
+    <ClInclude Include="..\source\encoder\reference.h" />
+    <ClInclude Include="..\source\encoder\sao.h" />
+    <ClInclude Include="..\source\encoder\search.h" />
+    <ClInclude Include="..\source\encoder\sei.h" />
+    <ClInclude Include="..\source\encoder\slicetype.h" />
+    <ClInclude Include="..\source\x265.h" />
+    <ClInclude Include="x265_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libx265.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="x265.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)'!='DebugDLL'And'$(Configuration)'!='ReleaseDLL'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\common\bitstream.cpp" />
+    <ClCompile Include="..\source\common\common.cpp" />
+    <ClCompile Include="..\source\common\constants.cpp" />
+    <ClCompile Include="..\source\common\cpu.cpp" />
+    <ClCompile Include="..\source\common\cudata.cpp" />
+    <ClCompile Include="..\source\common\dct.cpp" />
+    <ClCompile Include="..\source\common\deblock.cpp" />
+    <ClCompile Include="..\source\common\frame.cpp" />
+    <ClCompile Include="..\source\common\framedata.cpp" />
+    <ClCompile Include="..\source\common\IntraPred.cpp" />
+    <ClCompile Include="..\source\common\ipfilter.cpp" />
+    <ClCompile Include="..\source\common\loopfilter.cpp">
+      <ObjectFileName>$(IntDir)\loopfilter_c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\common\lowpassdct.cpp" />
+    <ClCompile Include="..\source\common\lowres.cpp" />
+    <ClCompile Include="..\source\common\md5.cpp" />
+    <ClCompile Include="..\source\common\param.cpp" />
+    <ClCompile Include="..\source\common\piclist.cpp" />
+    <ClCompile Include="..\source\common\picyuv.cpp" />
+    <ClCompile Include="..\source\common\pixel.cpp" />
+    <ClCompile Include="..\source\common\predict.cpp" />
+    <ClCompile Include="..\source\common\primitives.cpp" />
+    <ClCompile Include="..\source\common\quant.cpp" />
+    <ClCompile Include="..\source\common\scalinglist.cpp" />
+    <ClCompile Include="..\source\common\shortyuv.cpp" />
+    <ClCompile Include="..\source\common\slice.cpp" />
+    <ClCompile Include="..\source\common\threading.cpp" />
+    <ClCompile Include="..\source\common\threadpool.cpp" />
+    <ClCompile Include="..\source\common\vec\dct-sse3.cpp">
+      <Optimization Condition="'$(Configuration)'=='Debug'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)'=='DebugDLL'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Debug_10b'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Debug_12b'">MaxSpeed</Optimization>
+      <DebugInformationFormat Condition="'$(Configuration)'=='Debug'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)'=='DebugDLL'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)'=='Debug_10b'">ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat Condition="'$(Configuration)'=='Debug_12b'">ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks Condition="'$(Configuration)'=='Debug'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)'=='DebugDLL'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)'=='Debug_10b'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)'=='Debug_12b'">Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="..\source\common\vec\dct-sse41.cpp" />
+    <ClCompile Include="..\source\common\vec\dct-ssse3.cpp" />
+    <ClCompile Include="..\source\common\vec\vec-primitives.cpp" />
+    <ClCompile Include="..\source\common\version.cpp" />
+    <ClCompile Include="..\source\common\wavefront.cpp" />
+    <ClCompile Include="..\source\common\winxp.cpp" />
+    <ClCompile Include="..\source\common\x86\asm-primitives.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\common\yuv.cpp" />
+    <ClCompile Include="..\source\dynamicHDR10\api.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+      <ObjectFileName>$(IntDir)\apiHDR10.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\dynamicHDR10\json11\json11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\dynamicHDR10\JsonHelper.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\dynamicHDR10\metadataFromJson.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\dynamicHDR10\SeiMetadataDictionary.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\encoder\analysis.cpp" />
+    <ClCompile Include="..\source\encoder\api.cpp" />
+    <ClCompile Include="..\source\encoder\bitcost.cpp" />
+    <ClCompile Include="..\source\encoder\dpb.cpp" />
+    <ClCompile Include="..\source\encoder\encoder.cpp" />
+    <ClCompile Include="..\source\encoder\entropy.cpp" />
+    <ClCompile Include="..\source\encoder\frameencoder.cpp" />
+    <ClCompile Include="..\source\encoder\framefilter.cpp" />
+    <ClCompile Include="..\source\encoder\level.cpp" />
+    <ClCompile Include="..\source\encoder\motion.cpp" />
+    <ClCompile Include="..\source\encoder\nal.cpp" />
+    <ClCompile Include="..\source\encoder\ratecontrol.cpp" />
+    <ClCompile Include="..\source\encoder\reference.cpp" />
+    <ClCompile Include="..\source\encoder\sao.cpp" />
+    <ClCompile Include="..\source\encoder\search.cpp" />
+    <ClCompile Include="..\source\encoder\sei.cpp" />
+    <ClCompile Include="..\source\encoder\slicetype.cpp" />
+    <ClCompile Include="..\source\encoder\weightPrediction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <NASM Include="..\source\common\x86\blockcopy8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\const-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\cpu-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\dct8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\h-ipfilter16.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'!='Release_10b|x64'And'$(Configuration)|$(Platform)'!='Release_12b|x64'And'$(Configuration)|$(Platform)'!='Debug_10b|x64'And'$(Configuration)|$(Platform)'!='Debug_12b|x64'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\h-ipfilter8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\h4-ipfilter16.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'!='Release_10b|x64'And'$(Configuration)|$(Platform)'!='Release_12b|x64'And'$(Configuration)|$(Platform)'!='Debug_10b|x64'And'$(Configuration)|$(Platform)'!='Debug_12b|x64'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\intrapred16.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'!='Release_10b|x64'And'$(Configuration)|$(Platform)'!='Release_12b|x64'And'$(Configuration)|$(Platform)'!='Debug_10b|x64'And'$(Configuration)|$(Platform)'!='Debug_12b|x64'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\intrapred8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\intrapred8_allangs.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\ipfilter16.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'!='Release_10b|x64'And'$(Configuration)|$(Platform)'!='Release_12b|x64'And'$(Configuration)|$(Platform)'!='Debug_10b|x64'And'$(Configuration)|$(Platform)'!='Debug_12b|x64'">true</ExcludedFromBuild>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </NASM>
+    <NASM Include="..\source\common\x86\ipfilter8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\loopfilter.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\mc-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\mc-a2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\pixel-32.asm">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\pixel-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\pixel-util8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\pixeladd8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\sad-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\sad16-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'!='Release_10b|x64'And'$(Configuration)|$(Platform)'!='Release_12b|x64'And'$(Configuration)|$(Platform)'!='Debug_10b|x64'And'$(Configuration)|$(Platform)'!='Debug_12b|x64'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\seaintegral.asm" />
+    <NASM Include="..\source\common\x86\ssd-a.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_10b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_12b|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_12b|Win32'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\v4-ipfilter16.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'!='Release_10b|x64'And'$(Configuration)|$(Platform)'!='Release_12b|x64'And'$(Configuration)|$(Platform)'!='Debug_10b|x64'And'$(Configuration)|$(Platform)'!='Debug_12b|x64'">true</ExcludedFromBuild>
+    </NASM>
+    <NASM Include="..\source\common\x86\v4-ipfilter8.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_10b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release_12b'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_12b'">true</ExcludedFromBuild>
+    </NASM>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\nasm.targets" />
+  </ImportGroup>
+</Project>

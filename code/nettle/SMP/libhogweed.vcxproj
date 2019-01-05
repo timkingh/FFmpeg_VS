@@ -1,0 +1,3394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLLWinRT|Win32">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLLWinRT|x64">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|Win32">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|x64">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLStaticDeps|Win32">
+      <Configuration>ReleaseDLLStaticDeps</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLStaticDeps|x64">
+      <Configuration>ReleaseDLLStaticDeps</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRTStaticDeps|Win32">
+      <Configuration>ReleaseDLLWinRTStaticDeps</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRTStaticDeps|x64">
+      <Configuration>ReleaseDLLWinRTStaticDeps</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|Win32">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|x64">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|Win32">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|x64">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\aes.h" />
+    <ClInclude Include="..\arcfour.h" />
+    <ClInclude Include="..\arctwo.h" />
+    <ClInclude Include="..\asn1.h" />
+    <ClInclude Include="..\base16.h" />
+    <ClInclude Include="..\base64.h" />
+    <ClInclude Include="..\bignum.h" />
+    <ClInclude Include="..\blowfish.h" />
+    <ClInclude Include="..\buffer.h" />
+    <ClInclude Include="..\camellia.h" />
+    <ClInclude Include="..\cast128.h" />
+    <ClInclude Include="..\cbc.h" />
+    <ClInclude Include="..\ccm.h" />
+    <ClInclude Include="..\cfb.h" />
+    <ClInclude Include="..\chacha-poly1305.h" />
+    <ClInclude Include="..\chacha.h" />
+    <ClInclude Include="..\ctr.h" />
+    <ClInclude Include="..\curve25519.h" />
+    <ClInclude Include="..\des-compat.h" />
+    <ClInclude Include="..\des.h" />
+    <ClInclude Include="..\dsa-compat.h" />
+    <ClInclude Include="..\dsa.h" />
+    <ClInclude Include="..\eax.h" />
+    <ClInclude Include="..\ecc-curve.h" />
+    <ClInclude Include="..\ecc.h" />
+    <ClInclude Include="..\ecdsa.h" />
+    <ClInclude Include="..\eddsa.h" />
+    <ClInclude Include="..\gcm.h" />
+    <ClInclude Include="..\gosthash94.h" />
+    <ClInclude Include="..\hkdf.h" />
+    <ClInclude Include="..\hmac.h" />
+    <ClInclude Include="..\knuth-lfib.h" />
+    <ClInclude Include="..\macros.h" />
+    <ClInclude Include="..\md2.h" />
+    <ClInclude Include="..\md4.h" />
+    <ClInclude Include="..\md5-compat.h" />
+    <ClInclude Include="..\md5.h" />
+    <ClInclude Include="..\memops.h" />
+    <ClInclude Include="..\memxor.h" />
+    <ClInclude Include="..\nettle-meta.h" />
+    <ClInclude Include="..\nettle-types.h" />
+    <ClInclude Include="..\pbkdf2.h" />
+    <ClInclude Include="..\pgp.h" />
+    <ClInclude Include="..\pkcs1.h" />
+    <ClInclude Include="..\poly1305.h" />
+    <ClInclude Include="..\pss-mgf1.h" />
+    <ClInclude Include="..\pss.h" />
+    <ClInclude Include="..\realloc.h" />
+    <ClInclude Include="..\ripemd160.h" />
+    <ClInclude Include="..\rsa.h" />
+    <ClInclude Include="..\salsa20.h" />
+    <ClInclude Include="..\serpent.h" />
+    <ClInclude Include="..\sexp.h" />
+    <ClInclude Include="..\sha.h" />
+    <ClInclude Include="..\sha1.h" />
+    <ClInclude Include="..\sha2.h" />
+    <ClInclude Include="..\sha3.h" />
+    <ClInclude Include="..\twofish.h" />
+    <ClInclude Include="..\umac.h" />
+    <ClInclude Include="..\yarrow.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="nettle-stdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bignum-random-prime.c" />
+    <ClCompile Include="..\bignum-random.c" />
+    <ClCompile Include="..\bignum.c" />
+    <ClCompile Include="..\cnd-copy.c" />
+    <ClCompile Include="..\curve25519-eh-to-x.c" />
+    <ClCompile Include="..\curve25519-mul-g.c" />
+    <ClCompile Include="..\curve25519-mul.c" />
+    <ClCompile Include="..\der-iterator.c" />
+    <ClCompile Include="..\der2dsa.c" />
+    <ClCompile Include="..\der2rsa.c" />
+    <ClCompile Include="..\dsa-compat-keygen.c" />
+    <ClCompile Include="..\dsa-compat.c" />
+    <ClCompile Include="..\dsa-gen-params.c" />
+    <ClCompile Include="..\dsa-hash.c" />
+    <ClCompile Include="..\dsa-keygen.c" />
+    <ClCompile Include="..\dsa-sha1-sign.c" />
+    <ClCompile Include="..\dsa-sha1-verify.c" />
+    <ClCompile Include="..\dsa-sha256-sign.c" />
+    <ClCompile Include="..\dsa-sha256-verify.c" />
+    <ClCompile Include="..\dsa-sign.c" />
+    <ClCompile Include="..\dsa-verify.c" />
+    <ClCompile Include="..\dsa.c" />
+    <ClCompile Include="..\dsa2sexp.c" />
+    <ClCompile Include="..\ecc-192.c" />
+    <ClCompile Include="..\ecc-224.c" />
+    <ClCompile Include="..\ecc-25519.c" />
+    <ClCompile Include="..\ecc-256.c" />
+    <ClCompile Include="..\ecc-384.c" />
+    <ClCompile Include="..\ecc-521.c" />
+    <ClCompile Include="..\ecc-a-to-j.c" />
+    <ClCompile Include="..\ecc-add-eh.c" />
+    <ClCompile Include="..\ecc-add-ehh.c" />
+    <ClCompile Include="..\ecc-add-jja.c" />
+    <ClCompile Include="..\ecc-add-jjj.c" />
+    <ClCompile Include="..\ecc-dup-eh.c" />
+    <ClCompile Include="..\ecc-dup-jj.c" />
+    <ClCompile Include="..\ecc-ecdsa-sign.c" />
+    <ClCompile Include="..\ecc-ecdsa-verify.c" />
+    <ClCompile Include="..\ecc-eh-to-a.c" />
+    <ClCompile Include="..\ecc-hash.c" />
+    <ClCompile Include="..\ecc-j-to-a.c" />
+    <ClCompile Include="..\ecc-mod-arith.c" />
+    <ClCompile Include="..\ecc-mod-inv.c" />
+    <ClCompile Include="..\ecc-mod.c" />
+    <ClCompile Include="..\ecc-mul-a-eh.c" />
+    <ClCompile Include="..\ecc-mul-a.c" />
+    <ClCompile Include="..\ecc-mul-g-eh.c" />
+    <ClCompile Include="..\ecc-mul-g.c" />
+    <ClCompile Include="..\ecc-pm1-redc.c" />
+    <ClCompile Include="..\ecc-point-mul-g.c" />
+    <ClCompile Include="..\ecc-point-mul.c" />
+    <ClCompile Include="..\ecc-point.c" />
+    <ClCompile Include="..\ecc-pp1-redc.c" />
+    <ClCompile Include="..\ecc-random.c" />
+    <ClCompile Include="..\ecc-scalar.c" />
+    <ClCompile Include="..\ecc-size.c" />
+    <ClCompile Include="..\ecdsa-keygen.c" />
+    <ClCompile Include="..\ecdsa-sign.c" />
+    <ClCompile Include="..\ecdsa-verify.c" />
+    <ClCompile Include="..\ed25519-sha512-pubkey.c" />
+    <ClCompile Include="..\ed25519-sha512-sign.c" />
+    <ClCompile Include="..\ed25519-sha512-verify.c" />
+    <ClCompile Include="..\eddsa-compress.c" />
+    <ClCompile Include="..\eddsa-decompress.c" />
+    <ClCompile Include="..\eddsa-expand.c" />
+    <ClCompile Include="..\eddsa-hash.c" />
+    <ClCompile Include="..\eddsa-pubkey.c" />
+    <ClCompile Include="..\eddsa-sign.c" />
+    <ClCompile Include="..\eddsa-verify.c" />
+    <ClCompile Include="..\gmp-glue.c" />
+    <ClCompile Include="..\pgp-encode.c" />
+    <ClCompile Include="..\pkcs1-decrypt.c" />
+    <ClCompile Include="..\pkcs1-encrypt.c" />
+    <ClCompile Include="..\pkcs1-rsa-digest.c" />
+    <ClCompile Include="..\pkcs1-rsa-md5.c" />
+    <ClCompile Include="..\pkcs1-rsa-sha1.c" />
+    <ClCompile Include="..\pkcs1-rsa-sha256.c" />
+    <ClCompile Include="..\pkcs1-rsa-sha512.c" />
+    <ClCompile Include="..\pkcs1-sec-decrypt.c" />
+    <ClCompile Include="..\pkcs1.c" />
+    <ClCompile Include="..\pss-mgf1.c" />
+    <ClCompile Include="..\pss.c" />
+    <ClCompile Include="..\rsa-blind.c" />
+    <ClCompile Include="..\rsa-decrypt-tr.c" />
+    <ClCompile Include="..\rsa-decrypt.c" />
+    <ClCompile Include="..\rsa-encrypt.c" />
+    <ClCompile Include="..\rsa-keygen.c" />
+    <ClCompile Include="..\rsa-md5-sign-tr.c" />
+    <ClCompile Include="..\rsa-md5-sign.c" />
+    <ClCompile Include="..\rsa-md5-verify.c" />
+    <ClCompile Include="..\rsa-pkcs1-sign-tr.c" />
+    <ClCompile Include="..\rsa-pkcs1-sign.c" />
+    <ClCompile Include="..\rsa-pkcs1-verify.c" />
+    <ClCompile Include="..\rsa-pss-sha256-sign-tr.c" />
+    <ClCompile Include="..\rsa-pss-sha256-verify.c" />
+    <ClCompile Include="..\rsa-pss-sha512-sign-tr.c" />
+    <ClCompile Include="..\rsa-pss-sha512-verify.c" />
+    <ClCompile Include="..\rsa-sec-compute-root.c" />
+    <ClCompile Include="..\rsa-sec-decrypt.c" />
+    <ClCompile Include="..\rsa-sha1-sign-tr.c" />
+    <ClCompile Include="..\rsa-sha1-sign.c" />
+    <ClCompile Include="..\rsa-sha1-verify.c" />
+    <ClCompile Include="..\rsa-sha256-sign-tr.c" />
+    <ClCompile Include="..\rsa-sha256-sign.c" />
+    <ClCompile Include="..\rsa-sha256-verify.c" />
+    <ClCompile Include="..\rsa-sha512-sign-tr.c" />
+    <ClCompile Include="..\rsa-sha512-sign.c" />
+    <ClCompile Include="..\rsa-sha512-verify.c" />
+    <ClCompile Include="..\rsa-sign-tr.c" />
+    <ClCompile Include="..\rsa-sign.c" />
+    <ClCompile Include="..\rsa-verify.c" />
+    <ClCompile Include="..\rsa.c" />
+    <ClCompile Include="..\rsa2openpgp.c" />
+    <ClCompile Include="..\rsa2sexp.c" />
+    <ClCompile Include="..\sec-add-1.c" />
+    <ClCompile Include="..\sec-sub-1.c" />
+    <ClCompile Include="..\sec-tabselect.c" />
+    <ClCompile Include="..\sexp-format.c" />
+    <ClCompile Include="..\sexp-transport-format.c" />
+    <ClCompile Include="..\sexp-transport.c" />
+    <ClCompile Include="..\sexp.c" />
+    <ClCompile Include="..\sexp2bignum.c" />
+    <ClCompile Include="..\sexp2dsa.c" />
+    <ClCompile Include="..\sexp2rsa.c" />
+    <ClCompile Include="..\version.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libhogweed.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="x86_64\ecc-192-modp.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="x86_64\ecc-224-modp.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="x86_64\ecc-25519-modp.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="x86_64\ecc-256-redc.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="x86_64\ecc-384-modp.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="x86_64\ecc-521-modp.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{200F3D3C-8B84-46D8-953A-6C0EBD283B5C}</ProjectGuid>
+    <RootNamespace>libhogweed</RootNamespace>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' != ''">$(WindowsTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweedd</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweedd_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweedd</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweedd_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweedd</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweedd_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweedd</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweedd_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweed</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweed_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweed</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libhogweed_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>hogweed_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettled.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettled_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettled.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettled_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettled.lib;gmpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettled_winrt.lib;gmpd_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettled.lib;gmpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettled_winrt.lib;gmpd_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettle_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libnettle_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettle.lib;gmp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libnettle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettle_winrt.lib;gmp_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libnettle_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettle.lib;gmp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLStaticDeps|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libnettle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>nettle_winrt.lib;gmp_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRTStaticDeps|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;.\x86_64;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4146;4267;4028;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libhogweed.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <AdditionalDependencies>libnettle_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+      <AdditionalOptions>/IGNORE:4006,4221,4078 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\nettle
+copy ..\aes.h "$(OutDir)"\include\nettle
+copy ..\arcfour.h "$(OutDir)"\include\nettle
+copy ..\arctwo.h "$(OutDir)"\include\nettle
+copy ..\asn1.h "$(OutDir)"\include\nettle
+copy ..\base16.h "$(OutDir)"\include\nettle
+copy ..\base64.h "$(OutDir)"\include\nettle
+copy ..\bignum.h "$(OutDir)"\include\nettle
+copy ..\blowfish.h "$(OutDir)"\include\nettle
+copy ..\buffer.h "$(OutDir)"\include\nettle
+copy ..\camellia.h "$(OutDir)"\include\nettle
+copy ..\cast128.h "$(OutDir)"\include\nettle
+copy ..\cbc.h "$(OutDir)"\include\nettle
+copy ..\ccm.h "$(OutDir)"\include\nettle
+copy ..\cfb.h "$(OutDir)"\include\nettle
+copy ..\chacha.h "$(OutDir)"\include\nettle
+copy ..\chacha-poly1305.h "$(OutDir)"\include\nettle
+copy ..\curve25519.h "$(OutDir)"\include\nettle
+copy ..\ctr.h "$(OutDir)"\include\nettle
+copy ..\des.h "$(OutDir)"\include\nettle
+copy ..\des-compat.h "$(OutDir)"\include\nettle
+copy ..\dsa.h "$(OutDir)"\include\nettle
+copy ..\dsa-compat.h "$(OutDir)"\include\nettle
+copy ..\eax.h "$(OutDir)"\include\nettle
+copy ..\ecc.h "$(OutDir)"\include\nettle
+copy ..\ecc-curve.h "$(OutDir)"\include\nettle
+copy ..\ecdsa.h "$(OutDir)"\include\nettle
+copy ..\eddsa.h "$(OutDir)"\include\nettle
+copy ..\gcm.h "$(OutDir)"\include\nettle
+copy ..\gosthash94.h "$(OutDir)"\include\nettle
+copy ..\hmac.h "$(OutDir)"\include\nettle
+copy ..\hkdf.h "$(OutDir)"\include\nettle
+copy ..\knuth-lfib.h "$(OutDir)"\include\nettle
+copy ..\macros.h "$(OutDir)"\include\nettle
+copy ..\md2.h "$(OutDir)"\include\nettle
+copy ..\md4.h "$(OutDir)"\include\nettle
+copy ..\md5.h "$(OutDir)"\include\nettle
+copy ..\md5-compat.h "$(OutDir)"\include\nettle
+copy ..\memops.h "$(OutDir)"\include\nettle
+copy ..\memxor.h "$(OutDir)"\include\nettle
+copy ..\nettle-meta.h "$(OutDir)"\include\nettle
+copy .\nettle-stdint.h "$(OutDir)"\include\nettle
+copy ..\nettle-types.h "$(OutDir)"\include\nettle
+copy ..\pbkdf2.h "$(OutDir)"\include\nettle
+copy ..\pgp.h "$(OutDir)"\include\nettle
+copy ..\pkcs1.h "$(OutDir)"\include\nettle
+copy ..\pss.h "$(OutDir)"\include\nettle
+copy ..\pss-mgf1.h "$(OutDir)"\include\nettle
+copy ..\poly1305.h "$(OutDir)"\include\nettle
+copy ..\realloc.h "$(OutDir)"\include\nettle
+copy ..\ripemd160.h "$(OutDir)"\include\nettle
+copy ..\rsa.h "$(OutDir)"\include\nettle
+copy ..\salsa20.h "$(OutDir)"\include\nettle
+copy ..\serpent.h "$(OutDir)"\include\nettle
+copy ..\sexp.h "$(OutDir)"\include\nettle
+copy ..\sha.h "$(OutDir)"\include\nettle
+copy ..\sha1.h "$(OutDir)"\include\nettle
+copy ..\sha2.h "$(OutDir)"\include\nettle
+copy ..\sha3.h "$(OutDir)"\include\nettle
+copy ..\twofish.h "$(OutDir)"\include\nettle
+copy ..\umac.h "$(OutDir)"\include\nettle
+copy ..\yarrow.h "$(OutDir)"\include\nettle
+copy version.h "$(OutDir)"\include\nettle
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LESSERv3 $(OutDir)\licenses\nettle.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\nettle-stdint.h (
+del ..\nettle-stdint.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist "$(OutDir)"\include\nettle (
+rd /s /q "$(OutDir)"\include\nettle
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\nettle (
+rmdir /s /q "$(OutDir)"\include\nettle
+)
+if exist $(OutDir)\licenses\nettle.txt (
+del /f /q $(OutDir)\licenses\nettle.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Preprocessor>1</Preprocessor>
+      <Parser>1</Parser>
+    </YASM>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e850f24d-093f-4c30-a99c-413a7dfa71b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f18cd969-acc3-480c-9147-ea3ae1c8ba92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bdd0568e-d423-4fcc-affe-6ba0c2a40f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mpglib">
+      <UniqueIdentifier>{a776732e-ec97-4241-889b-1dd30049312f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mpglib">
+      <UniqueIdentifier>{5a9444e6-28cd-4746-acb6-1c8a3d8b7b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{ca8e2e09-f7f2-4874-833a-07b59de29dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libmp3lame">
+      <UniqueIdentifier>{6fb95c48-65a9-4cef-9f98-3d370de11b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libmp3lame\vector">
+      <UniqueIdentifier>{c85c7e13-a52d-4ab2-8edc-4636d27a7c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libmp3lame">
+      <UniqueIdentifier>{d4151846-79de-4909-afc1-49fce323a4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libmp3lame\vector">
+      <UniqueIdentifier>{6fff5061-979d-43fb-8373-ee9304da0f69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libmp3lame\vector\xmm_quantize_sub.c">
+      <Filter>Source Files\libmp3lame\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\layer3.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\tabinit.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\common.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\dct64_i386.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\decode_i386.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\interface.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\layer1.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpglib\layer2.c">
+      <Filter>Source Files\mpglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\bitstream.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\encoder.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\fft.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\gain_analysis.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\id3tag.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\lame.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\mpglib_interface.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\newmdct.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\presets.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\psymodel.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\quantize.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\quantize_pvt.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\reservoir.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\set_get.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\tables.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\takehiro.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\util.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\vbrquantize.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\VbrTag.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp3lame\version.c">
+      <Filter>Source Files\libmp3lame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libmp3lame\vector\lame_intrin.h">
+      <Filter>Header Files\libmp3lame\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\common.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\dct64_i386.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\decode_i386.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\interface.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\layer1.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\layer2.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\layer3.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\tabinit.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\mpg123.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpglib\mpglib.h">
+      <Filter>Header Files\mpglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\lame.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\bitstream.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\encoder.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\fft.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\gain_analysis.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\id3tag.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\l3side.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\lame-analysis.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\lame_global_flags.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\machine.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\newmdct.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\psymodel.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\quantize.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\quantize_pvt.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\reservoir.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\set_get.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\tables.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\util.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\vbrquantize.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\VbrTag.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp3lame\version.h">
+      <Filter>Header Files\libmp3lame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\libmp3lame\lame.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libmp3lame.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

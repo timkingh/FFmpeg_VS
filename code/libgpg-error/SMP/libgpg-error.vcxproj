@@ -1,0 +1,2063 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLLWinRT|Win32">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLLWinRT|x64">
+      <Configuration>DebugDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|Win32">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWinRT|x64">
+      <Configuration>DebugWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|Win32">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLLWinRT|x64">
+      <Configuration>ReleaseDLLWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|Win32">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWinRT|x64">
+      <Configuration>ReleaseWinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\estream-printf.h" />
+    <ClInclude Include="..\src\estream.h" />
+    <ClInclude Include="..\src\gettext.h" />
+    <ClInclude Include="..\src\gpgrt-int.h" />
+    <ClInclude Include="..\src\init.h" />
+    <ClInclude Include="..\src\lock.h" />
+    <ClInclude Include="..\src\thread.h" />
+    <ClInclude Include="..\src\visibility.h" />
+    <ClInclude Include="..\src\w32-add.h" />
+    <ClInclude Include="..\src\w32-lock-obj.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\argparse.c" />
+    <ClCompile Include="..\src\b64dec.c" />
+    <ClCompile Include="..\src\b64enc.c" />
+    <ClCompile Include="..\src\code-from-errno.c" />
+    <ClCompile Include="..\src\code-to-errno.c" />
+    <ClCompile Include="..\src\estream-printf.c" />
+    <ClCompile Include="..\src\estream.c" />
+    <ClCompile Include="..\src\init.c" />
+    <ClCompile Include="..\src\logging.c" />
+    <ClCompile Include="..\src\strerror-sym.c" />
+    <ClCompile Include="..\src\strerror.c" />
+    <ClCompile Include="..\src\strsource-sym.c" />
+    <ClCompile Include="..\src\strsource.c" />
+    <ClCompile Include="..\src\syscall-clamp.c" />
+    <ClCompile Include="..\src\sysutils.c" />
+    <ClCompile Include="..\src\version.c" />
+    <ClCompile Include="..\src\visibility.c" />
+    <ClCompile Include="..\src\w32-estream.c" />
+    <ClCompile Include="..\src\w32-gettext.c" />
+    <ClCompile Include="..\src\w32-iconv.c" />
+    <ClCompile Include="..\src\w32-lock.c" />
+    <ClCompile Include="..\src\w32-reg.c" />
+    <ClCompile Include="..\src\w32-thread.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="versioninfo.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='DebugWinRT'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='ReleaseWinRT'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libgpg-error.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A04A762D-A8D7-4F68-9B79-FBE63C6BE105}</ProjectGuid>
+    <RootNamespace>libgpg-error</RootNamespace>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' != ''">$(WindowsTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '15.0'">10.0</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '14.0'">8.1</ApplicationTypeRevision>
+    <ApplicationTypeRevision Condition="'$(VisualStudioVersion)' == '12.0'">8.1</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition="'$(ApplicationTypeRevision)|$(WindowsTargetPlatformVersion)' == '10.0|'">10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0.10240.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-errord</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-errord_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-errord</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-errord_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-errord</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-errord_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-errord</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-errord_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-error</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-error_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-error</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgpg-error_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-error</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-error_winrt</TargetName>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-error</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>gpg-error_winrt</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";NDEBUG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;PKGDATADIR="";NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";NDEBUG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0502;HAVE_CONFIG_H;PKGDATADIR="";NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";NDEBUG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x86\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x86\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;HAVE_CONFIG_H;PKGDATADIR="";MKDIR_TAKES_ONE_ARG;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion>6.1</MinimumRequiredVersion>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKGDATADIR="";NDEBUG;_WINDOWS;GetConsoleOutputCP=GetACP;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4244;4018;4267;4312;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(IntDir)\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgpg-error.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '10.0'">10.0</MinimumRequiredVersion>
+      <MinimumRequiredVersion Condition="'$(ApplicationTypeRevision)' == '8.1'">8.1</MinimumRequiredVersion>
+      <WindowsMetadataFile>$(OutDir)\lib\x64\$(RootNamespace).winmd</WindowsMetadataFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy .\src\gpg-error.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy ..\COPYING.LIB $(OutDir)\licenses\libgpg-error.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\src\err-sources.h (
+del ..\src\err-sources.h
+)
+if exist ..\src\err-sources-sym.h (
+del ..\src\err-sources-sym.h
+)
+if exist ..\src\err-codes.h (
+del ..\src\err-codes.h
+)
+if exist ..\src\err-codes-sym.h (
+del ..\src\err-codes-sym.h
+)
+if exist ..\src\code-to-errno.h (
+del ..\src\code-to-errno.h
+)
+if exist ..\src\code-from-errno.h (
+del ..\src\code-from-errno.h
+)
+if exist ..\src\errnos-sym.h (
+del ..\src\errnos-sym.h
+)
+if exist ..\src\lock-obj-pub.native.h (
+del ..\src\lock-obj-pub.native.h
+)
+if exist ..\src\gpg-error.h (
+del ..\src\gpg-error.h
+)
+if exist "$(OutDir)"\include\gpg-error.h (
+del "$(OutDir)"\include\gpg-error.h
+)
+if not exist .\src\err-sources.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-sources.h.in &gt; .\src\err-sources.h
+)
+if not exist .\src\err-sources-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-sources.h.in &gt; .\src\err-sources-sym.h
+)
+if not exist .\src\err-codes.h (
+awk -f ..\src\mkstrtable.awk -v textidx=3 ..\src\err-codes.h.in &gt; .\src\err-codes.h
+)
+if not exist .\src\err-codes-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 ..\src\err-codes.h.in &gt; .\src\err-codes-sym.h
+)
+if not exist .\src\code-to-errno.h (
+awk -f ..\src\mkerrnos.awk ..\src\errnos.in &gt; .\src\code-to-errno.h
+)
+if not exist .\src\errnos-sym.h (
+awk -f ..\src\mkstrtable.awk -v textidx=2 -v nogettext=1 -v prefix=GPG_ERR_ -v namespace=errnos_ ..\src\errnos.in &gt; .\src\errnos-sym.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gpg-error.h (
+del /f /q "$(OutDir)"\include\gpg-error.h
+)
+if exist $(OutDir)\licenses\libgpg-error.txt (
+del /f /q $(OutDir)\licenses\libgpg-error.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
