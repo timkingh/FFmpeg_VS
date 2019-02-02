@@ -22,3 +22,8 @@ vs2017: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC<br>
  vs2017: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations<br>
 3. 打开\code\Ffmpeg\SMP\ ffmpeg_deps.sln就可以编译了
 
+#### 配置说明
+1. Debug/Release 第三方库和ffmpegSDK都是静态库
+2. DebugDLL/ReleaseDLL 第三方库和ffmpegSDK都是DLL。libvpx我改成了静态库，因为里面有个导出变量，外面引用的话链接时会找不到符号，要用dll必须修改代码才行。
+3. DebugDLLStaticDeps/ReleaseDLLStaticDeps ffmpegSDK是DLL,第三方库是静态库。一般都是用的这种方案。
+3. ReleaseLTO 给windows UWP使用的，可能需要win10和最新的vs及sdk，我暂时还没编过。
