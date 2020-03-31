@@ -1,3 +1,4 @@
 /code/FFmpeg/SMP/.vs
 /code/FFmpeg/SMP/*.user
 */obj/*
+msvc
